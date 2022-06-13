@@ -11,3 +11,11 @@ Activate the environment
 Install flask (only after creating the environment)
 
 - pip install flask
+
+Run A Flask App
+
+- flask run
+
+Turn on DEBUG mode
+
+- set FLASK_DEBUG=true
