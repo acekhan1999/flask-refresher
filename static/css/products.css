@@ -1,0 +1,64 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100vh;
+}
+
+.card_container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+    width: 60%;
+}
+
+.card {
+    width: 50%;
+    border: 1px solid black;
+
+    margin: 0 10px;
+}
+
+.card_img img {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+
+    text-decoration: none;
+    padding: 20px;
+
+    width: 400px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a{
+    color: white;   
+    margin: 0 15px;
+
+}
+
+footer {
+    margin: 15px 0;
+    padding: 15px;
+
+    background-color: black;
+    color: white;
+}
