@@ -1,0 +1,26 @@
+[
+  {
+    "id": "b279d486-1a8a-4247-989f-1ded5187700a",
+    "data": {
+      "customer_name": "John Doe",
+      "customer_email": "john.doe@email.com",
+      "customer_password": "john123"
+    }
+  },
+  {
+    "id": "99b3bd23-b029-48c3-a799-c520d82676f6",
+    "data": {
+      "customer_name": "Carl Silva",
+      "customer_email": "silva.carl8744@gmail.com",
+      "customer_password": "newuser123"
+    }
+  },
+  {
+    "id": "12cdb37b-14f1-4ecf-9bff-a94be90790d4",
+    "data": {
+      "customer_name": "William Jeff",
+      "customer_email": "william.jeff@email.com",
+      "customer_password": "newuser123"
+    }
+  }
+]
