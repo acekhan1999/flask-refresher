@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register New Customer</title>
+
+    <style>
+      * {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(186, 186, 186);
+        height: 75vh;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        background-color: white;
+        padding: 10%;
+        margin-top: 10%;
+        width: 50%;
+      }
+
+      .form_group {
+        margin: 10px;
+      }
+
+      .form_group input {
+        width: 100%;
+        padding: 10px 15px;
+      }
+
+      .form_group input[type="submit"] {
+        padding: 10px 15px;
+        background-color: coral;
+        color: white;
+        width: 100%;
+      }
+
+      .error {
+        padding: 10px;
+        width: 100%;
+        background-color: pink;
+        border: 3px solid red;
+      }
+
+      .error p {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome Back!</h1>
+      <form
+        action="{{ url_for('login') }}"
+        class="form_container"
+        method="POST"
+      >
+        <div class="form_group">
+          <input
+            type="email"
+            name="customer_email"
+            id="customer_email"
+            placeholder="Enter Your Email"
+          />
+        </div>
+        <div class="form_group">
+          <input
+            type="password"
+            name="customer_password"
+            id="customer_password"
+            placeholder="Enter Your Passowrd"
+          />
+        </div>
+        <div class="form_group">
+          <input type="submit" value="LOGIN" />
+        </div>
+      </form>
+
+      <a href="{{url_for('register')}}">New User?</a>
+
+      {% if error != None %}
+
+      <div class="error">
+        <p>{{error}}</p>
+      </div>
+
+      {% endif %}
+    </div>
+  </body>
+</html>
