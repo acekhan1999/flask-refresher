@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/dashboard.css')}}"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <h1>Your Profile</h1>
+
+        <a href="{{ url_for('logout') }}"> Logout</a>
+      </div>
+      <p>{{session['customer_data']['customer_name']}}</p>
+      <p>{{session['customer_data']['customer_email']}}</p>
+
+      <p>...</p>
+
+      <form action="" method="post">
+        <label for="desc">Add Your Description</label>
+        <textarea name="desc" id="" cols="30" rows="10"></textarea>
+      </form>
+
+      <h2>Your Posts</h2>
+
+      <ul>
+        <li>
+          <h3>My First Trip To Turkey</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam!
+            Consectetur voluptatibus quis optio, cum nemo labore maxime eaque
+            delectus hic quam autem repellat ex nulla exercitationem placeat
+            tempora odio.
+          </p>
+        </li>
+        <li>
+          <h3>My First Trip To Turkey</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam!
+            Consectetur voluptatibus quis optio, cum nemo labore maxime eaque
+            delectus hic quam autem repellat ex nulla exercitationem placeat
+            tempora odio.
+          </p>
+        </li>
+        <li>
+          <h3>My First Trip To Turkey</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, nam!
+            Consectetur voluptatibus quis optio, cum nemo labore maxime eaque
+            delectus hic quam autem repellat ex nulla exercitationem placeat
+            tempora odio.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
